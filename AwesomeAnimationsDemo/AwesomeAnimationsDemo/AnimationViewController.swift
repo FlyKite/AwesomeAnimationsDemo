@@ -28,10 +28,17 @@ class AnimationViewController: UIViewController {
     private func createAnimationView(_ type: AnimationType) {
         var view: BaseView!
         let screenWidth = UIScreen.main.bounds.size.width
-        let frame = CGRect(x: CGFloat(50), y: CGFloat(100), width: screenWidth - 100, height: screenWidth - 100)
         switch type {
         case .unlimitedTriangle:
-            view = UnlimitedTriangle(frame: frame)
+            view = UnlimitedTriangle(frame: CGRect(x: CGFloat(50),
+                                                      y: CGFloat(100),
+                                                      width: screenWidth - 100,
+                                                      height: screenWidth - 100))
+        case .playAndPause:
+            view = PlayAndPause(frame: CGRect(x: screenWidth / 2 - 20,
+                                              y: CGFloat(100),
+                                              width: 40,
+                                              height: 40))
         }
         self.view.addSubview(view)
     }

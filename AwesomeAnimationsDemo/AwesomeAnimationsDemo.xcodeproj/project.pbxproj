@@ -15,6 +15,7 @@
 		A68B57201F18DEBB006EDB1B /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68B571F1F18DEBB006EDB1B /* AnimationViewController.swift */; };
 		A68B57221F18DFD4006EDB1B /* UnlimitedTriangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68B57211F18DFD4006EDB1B /* UnlimitedTriangle.swift */; };
 		A68B57241F18E027006EDB1B /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68B57231F18E027006EDB1B /* BaseView.swift */; };
+		A68B572F1F18F82F006EDB1B /* PlayAndPause.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68B572E1F18F82F006EDB1B /* PlayAndPause.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		A68B571F1F18DEBB006EDB1B /* AnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
 		A68B57211F18DFD4006EDB1B /* UnlimitedTriangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnlimitedTriangle.swift; sourceTree = "<group>"; };
 		A68B57231F18E027006EDB1B /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		A68B572E1F18F82F006EDB1B /* PlayAndPause.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayAndPause.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 			children = (
 				A68B57231F18E027006EDB1B /* BaseView.swift */,
 				A68B57211F18DFD4006EDB1B /* UnlimitedTriangle.swift */,
+				A68B572E1F18F82F006EDB1B /* PlayAndPause.swift */,
 			);
 			path = AwesomeAnimations;
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 				A68B570F1F18DC63006EDB1B /* ViewController.swift in Sources */,
 				A68B57241F18E027006EDB1B /* BaseView.swift in Sources */,
 				A68B570D1F18DC63006EDB1B /* AppDelegate.swift in Sources */,
+				A68B572F1F18F82F006EDB1B /* PlayAndPause.swift in Sources */,
 				A68B57221F18DFD4006EDB1B /* UnlimitedTriangle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

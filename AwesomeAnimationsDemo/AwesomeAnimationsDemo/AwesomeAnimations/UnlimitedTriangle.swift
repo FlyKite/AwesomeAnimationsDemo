@@ -20,68 +20,68 @@ class UnlimitedTriangle: BaseView {
         let yOffset = triangleHeight - triangleHeight * 2 / 3 * 2
         let duration = 3.0
         
-        let layer = CAShapeLayer.init()
+        let layer = CAShapeLayer()
         layer.frame = CGRect(x: 0, y: 0, width: areaWidth, height: areaWidth)
         layer.fillColor = UIColor.black.cgColor
         
-        let fromPath = UIBezierPath.init()
+        let fromPath = UIBezierPath()
         // The top triangle
-        fromPath.move(to: CGPoint.init(x: areaWidth / 2, y: areaWidth / 2 - triangleHeight + yOffset))
-        fromPath.addLine(to: CGPoint.init(x: areaWidth / 2 - triangleLength / 2, y: areaWidth / 2 + yOffset))
-        fromPath.addLine(to: CGPoint.init(x: areaWidth / 2 + triangleLength / 2, y: areaWidth / 2 + yOffset))
-        fromPath.addLine(to: CGPoint.init(x: areaWidth / 2, y: areaWidth / 2 - triangleHeight + yOffset))
+        fromPath.move(to: CGPoint(x: areaWidth / 2, y: areaWidth / 2 - triangleHeight + yOffset))
+        fromPath.addLine(to: CGPoint(x: areaWidth / 2 - triangleLength / 2, y: areaWidth / 2 + yOffset))
+        fromPath.addLine(to: CGPoint(x: areaWidth / 2 + triangleLength / 2, y: areaWidth / 2 + yOffset))
+        fromPath.addLine(to: CGPoint(x: areaWidth / 2, y: areaWidth / 2 - triangleHeight + yOffset))
         
         // The center triangle
-        fromPath.move(to: CGPoint.init(x: areaWidth / 2 - triangleLength / 2, y: areaWidth / 2 + yOffset))
-        fromPath.addLine(to: CGPoint.init(x: areaWidth / 2, y: areaWidth / 2 + triangleHeight + yOffset))
-        fromPath.addLine(to: CGPoint.init(x: areaWidth / 2 + triangleLength / 2, y: areaWidth / 2 + yOffset))
-        fromPath.addLine(to: CGPoint.init(x: areaWidth / 2 - triangleLength / 2, y: areaWidth / 2 + yOffset))
+        fromPath.move(to: CGPoint(x: areaWidth / 2 - triangleLength / 2, y: areaWidth / 2 + yOffset))
+        fromPath.addLine(to: CGPoint(x: areaWidth / 2, y: areaWidth / 2 + triangleHeight + yOffset))
+        fromPath.addLine(to: CGPoint(x: areaWidth / 2 + triangleLength / 2, y: areaWidth / 2 + yOffset))
+        fromPath.addLine(to: CGPoint(x: areaWidth / 2 - triangleLength / 2, y: areaWidth / 2 + yOffset))
         
         // The left triangle
-        fromPath.move(to: CGPoint.init(x: areaWidth / 2 - triangleLength / 2, y: areaWidth / 2 + yOffset))
-        fromPath.addLine(to: CGPoint.init(x: areaWidth / 2 - triangleLength, y: areaWidth / 2 + triangleHeight + yOffset))
-        fromPath.addLine(to: CGPoint.init(x: areaWidth / 2, y: areaWidth / 2 + triangleHeight + yOffset))
-        fromPath.addLine(to: CGPoint.init(x: areaWidth / 2 - triangleLength / 2, y: areaWidth / 2 + yOffset))
+        fromPath.move(to: CGPoint(x: areaWidth / 2 - triangleLength / 2, y: areaWidth / 2 + yOffset))
+        fromPath.addLine(to: CGPoint(x: areaWidth / 2 - triangleLength, y: areaWidth / 2 + triangleHeight + yOffset))
+        fromPath.addLine(to: CGPoint(x: areaWidth / 2, y: areaWidth / 2 + triangleHeight + yOffset))
+        fromPath.addLine(to: CGPoint(x: areaWidth / 2 - triangleLength / 2, y: areaWidth / 2 + yOffset))
         
         // The right triangle
-        fromPath.move(to: CGPoint.init(x: areaWidth / 2 + triangleLength / 2, y: areaWidth / 2 + yOffset))
-        fromPath.addLine(to: CGPoint.init(x: areaWidth / 2, y: areaWidth / 2 + triangleHeight + yOffset))
-        fromPath.addLine(to: CGPoint.init(x: areaWidth / 2 + triangleLength, y: areaWidth / 2 + triangleHeight + yOffset))
-        fromPath.addLine(to: CGPoint.init(x: areaWidth / 2 + triangleLength / 2, y: areaWidth / 2 + yOffset))
+        fromPath.move(to: CGPoint(x: areaWidth / 2 + triangleLength / 2, y: areaWidth / 2 + yOffset))
+        fromPath.addLine(to: CGPoint(x: areaWidth / 2, y: areaWidth / 2 + triangleHeight + yOffset))
+        fromPath.addLine(to: CGPoint(x: areaWidth / 2 + triangleLength, y: areaWidth / 2 + triangleHeight + yOffset))
+        fromPath.addLine(to: CGPoint(x: areaWidth / 2 + triangleLength / 2, y: areaWidth / 2 + yOffset))
         
         // Set the path to layer
         layer.path = fromPath.cgPath
         
-        let toPath = UIBezierPath.init()
+        let toPath = UIBezierPath()
         // The top triangle will be animated to dismiss
-        let topPoint = CGPoint.init(x: areaWidth / 2, y: areaWidth / 2 - 3 * triangleHeight - yOffset)
+        let topPoint = CGPoint(x: areaWidth / 2, y: areaWidth / 2 - 3 * triangleHeight - yOffset)
         toPath.move(to: topPoint)
         toPath.addLine(to: topPoint)
         toPath.addLine(to: topPoint)
         toPath.addLine(to: topPoint)
         
         // The center animation will be animated to
-        toPath.move(to: CGPoint.init(x: areaWidth / 2 - triangleLength, y: areaWidth / 2 - triangleHeight - yOffset))
-        toPath.addLine(to: CGPoint.init(x: areaWidth / 2, y: areaWidth / 2 + triangleHeight - yOffset))
-        toPath.addLine(to: CGPoint.init(x: areaWidth / 2 + triangleLength, y: areaWidth / 2 - triangleHeight - yOffset))
-        toPath.addLine(to: CGPoint.init(x: areaWidth / 2 - triangleLength, y: areaWidth / 2 - triangleHeight - yOffset))
+        toPath.move(to: CGPoint(x: areaWidth / 2 - triangleLength, y: areaWidth / 2 - triangleHeight - yOffset))
+        toPath.addLine(to: CGPoint(x: areaWidth / 2, y: areaWidth / 2 + triangleHeight - yOffset))
+        toPath.addLine(to: CGPoint(x: areaWidth / 2 + triangleLength, y: areaWidth / 2 - triangleHeight - yOffset))
+        toPath.addLine(to: CGPoint(x: areaWidth / 2 - triangleLength, y: areaWidth / 2 - triangleHeight - yOffset))
         
         // The left triangle will be animated to dismiss
-        let leftPoint = CGPoint.init(x: areaWidth / 2 - triangleLength * 2, y: areaWidth / 2 + triangleHeight - yOffset)
+        let leftPoint = CGPoint(x: areaWidth / 2 - triangleLength * 2, y: areaWidth / 2 + triangleHeight - yOffset)
         toPath.move(to: leftPoint)
         toPath.addLine(to: leftPoint)
         toPath.addLine(to: leftPoint)
         toPath.addLine(to: leftPoint)
         
         // The right triangle will be animated to dismiss
-        let rightPoint = CGPoint.init(x: areaWidth / 2 + triangleLength * 2, y: areaWidth / 2 + triangleHeight - yOffset)
+        let rightPoint = CGPoint(x: areaWidth / 2 + triangleLength * 2, y: areaWidth / 2 + triangleHeight - yOffset)
         toPath.move(to: rightPoint)
         toPath.addLine(to: rightPoint)
         toPath.addLine(to: rightPoint)
         toPath.addLine(to: rightPoint)
         
         // The path animation
-        let pathAnimation = CABasicAnimation.init(keyPath: "path")
+        let pathAnimation = CABasicAnimation(keyPath: "path")
         pathAnimation.fromValue = fromPath.cgPath
         pathAnimation.toValue = toPath.cgPath
         pathAnimation.duration = duration
@@ -89,9 +89,9 @@ class UnlimitedTriangle: BaseView {
         layer.add(pathAnimation, forKey: "path")
         
         // The rotation animation
-        let rotationAnimation = CABasicAnimation.init(keyPath: "transform.rotation.z")
-        rotationAnimation.fromValue = NSNumber.init(value: 0)
-        rotationAnimation.toValue = NSNumber.init(value: Double.pi / 3)
+        let rotationAnimation = CABasicAnimation(keyPath: "transform.rotation.z")
+        rotationAnimation.fromValue = NSNumber(value: 0)
+        rotationAnimation.toValue = NSNumber(value: Double.pi / 3)
         rotationAnimation.duration = duration
         rotationAnimation.repeatCount = MAXFLOAT
         layer.add(rotationAnimation, forKey: "transform.rotation.z")
