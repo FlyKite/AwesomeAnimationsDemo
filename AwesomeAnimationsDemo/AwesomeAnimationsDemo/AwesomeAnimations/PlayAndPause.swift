@@ -66,7 +66,9 @@ class PlayAndPause: BaseView {
             pausePath.cgPath,
             pausePath.cgPath,
             stopPath.cgPath,
-            stopPath.cgPath
+            stopPath.cgPath,
+            playPath.cgPath,
+            playPath.cgPath
         ]
         keyframeAnimation.duration = duration
         keyframeAnimation.autoreverses = true
