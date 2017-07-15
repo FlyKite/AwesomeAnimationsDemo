@@ -39,6 +39,11 @@ class AnimationViewController: UIViewController {
                                               y: CGFloat(100),
                                               width: 40,
                                               height: 40))
+        case .menuAndClose:
+            view = MenuAndClose(frame: CGRect(x: screenWidth / 2 - 20,
+                                              y: CGFloat(100),
+                                              width: 40,
+                                              height: 40))
         }
         self.view.addSubview(view)
     }
