@@ -7,3 +7,6 @@ A demo project of some awesome animations.
 
 ### Play and Pause
 ![PlayAndPause](https://raw.githubusercontent.com/FlyKite/AwesomeAnimationsDemo/master/Previews/PlayAndPause.gif)
+
+### Menu and Close
+![PlayAndPause](https://raw.githubusercontent.com/FlyKite/AwesomeAnimationsDemo/master/Previews/MenuAndClose.gif)
