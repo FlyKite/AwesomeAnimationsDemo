@@ -12,11 +12,12 @@ enum AnimationType: String {
     case unlimitedTriangle = "Unlimited Triangle"
     case playAndPause = "Play and Pause"
     case menuAndClose = "Menu and Close"
+    case hamburgerMenu = "Hamburger Menu"
 }
 
 class ViewController: UIViewController {
     
-    let animationNames: [AnimationType] = [.unlimitedTriangle, .playAndPause, .menuAndClose]
+    let animationNames: [AnimationType] = [.unlimitedTriangle, .playAndPause, .menuAndClose, .hamburgerMenu]
 
     override func viewDidLoad() {
         super.viewDidLoad()
