@@ -10,3 +10,6 @@ A demo project of some awesome animations.
 
 ### Menu and Close
 ![PlayAndPause](https://raw.githubusercontent.com/FlyKite/AwesomeAnimationsDemo/master/Previews/MenuAndClose.gif)
+
+### Hamburger Menu
+![PlayAndPause](https://raw.githubusercontent.com/FlyKite/AwesomeAnimationsDemo/master/Previews/HamburgerMenu.gif)
