@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A6535F161F19AEA7004A0646 /* MenuAndClose.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6535F151F19AEA7004A0646 /* MenuAndClose.swift */; };
 		A6535F181F19B567004A0646 /* HamburgerMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6535F171F19B567004A0646 /* HamburgerMenu.swift */; };
+		A687FA7B1F1E382300548160 /* Waves.swift in Sources */ = {isa = PBXBuildFile; fileRef = A687FA7A1F1E382300548160 /* Waves.swift */; };
 		A68B570D1F18DC63006EDB1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68B570C1F18DC63006EDB1B /* AppDelegate.swift */; };
 		A68B570F1F18DC63006EDB1B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68B570E1F18DC63006EDB1B /* ViewController.swift */; };
 		A68B57121F18DC63006EDB1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A68B57101F18DC63006EDB1B /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		A6535F151F19AEA7004A0646 /* MenuAndClose.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuAndClose.swift; sourceTree = "<group>"; };
 		A6535F171F19B567004A0646 /* HamburgerMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HamburgerMenu.swift; sourceTree = "<group>"; };
+		A687FA7A1F1E382300548160 /* Waves.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Waves.swift; sourceTree = "<group>"; };
 		A68B57091F18DC63006EDB1B /* AwesomeAnimationsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AwesomeAnimationsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A68B570C1F18DC63006EDB1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A68B570E1F18DC63006EDB1B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				A68B572E1F18F82F006EDB1B /* PlayAndPause.swift */,
 				A6535F151F19AEA7004A0646 /* MenuAndClose.swift */,
 				A6535F171F19B567004A0646 /* HamburgerMenu.swift */,
+				A687FA7A1F1E382300548160 /* Waves.swift */,
 			);
 			path = AwesomeAnimations;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 				A68B57241F18E027006EDB1B /* BaseView.swift in Sources */,
 				A68B570D1F18DC63006EDB1B /* AppDelegate.swift in Sources */,
 				A68B572F1F18F82F006EDB1B /* PlayAndPause.swift in Sources */,
+				A687FA7B1F1E382300548160 /* Waves.swift in Sources */,
 				A68B57221F18DFD4006EDB1B /* UnlimitedTriangle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

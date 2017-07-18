@@ -49,6 +49,11 @@ class AnimationViewController: UIViewController {
                                                y: CGFloat(100),
                                                width: 20,
                                                height: 20))
+        case .waves:
+            view = HamburgerMenu(frame: CGRect(x: screenWidth / 2 - 150,
+                                               y: CGFloat(100),
+                                               width: 300,
+                                               height: 100))
         }
         self.view.addSubview(view)
     }
