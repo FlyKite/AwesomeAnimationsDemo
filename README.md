@@ -1,5 +1,5 @@
 # AwesomeAnimationsDemo
-一个Demo，许多有意思的动画。
+一个Demo，许多有意思的动画。  
 A demo project of some awesome animations.
 
 ## Preview
