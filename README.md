@@ -1,4 +1,5 @@
 # AwesomeAnimationsDemo
+一个Demo，许多有意思的动画。
 A demo project of some awesome animations.
 
 ## Preview
@@ -9,7 +10,10 @@ A demo project of some awesome animations.
 ![PlayAndPause](https://raw.githubusercontent.com/FlyKite/AwesomeAnimationsDemo/master/Previews/PlayAndPause.gif)
 
 ### Menu and Close
-![PlayAndPause](https://raw.githubusercontent.com/FlyKite/AwesomeAnimationsDemo/master/Previews/MenuAndClose.gif)
+![MenuAndClose](https://raw.githubusercontent.com/FlyKite/AwesomeAnimationsDemo/master/Previews/MenuAndClose.gif)
 
 ### Hamburger Menu
-![PlayAndPause](https://raw.githubusercontent.com/FlyKite/AwesomeAnimationsDemo/master/Previews/HamburgerMenu.gif)
+![HamburgerMenu](https://raw.githubusercontent.com/FlyKite/AwesomeAnimationsDemo/master/Previews/HamburgerMenu.gif)
+
+### Waves
+![Waves](https://raw.githubusercontent.com/FlyKite/AwesomeAnimationsDemo/master/Previews/Waves.gif)
