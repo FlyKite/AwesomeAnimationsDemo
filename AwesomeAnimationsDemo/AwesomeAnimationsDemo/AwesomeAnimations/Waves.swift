@@ -28,34 +28,41 @@ class Waves: BaseView {
             let waveColor = waveColors[index]
             let duration = durations[index]
             
-            let waveLayer = CAShapeLayer()
-            waveLayer.frame = CGRect(x: 0, y: 0, width: areaWidth, height: areaHeight)
-            waveLayer.fillColor = waveColor.cgColor
+            let waveLayer = self.createWaveLayer(self.bounds, waveLength: waveLength, waveHeight: waveHeight, waveColor: waveColor, animationDuration: duration)
             self.layer.addSublayer(waveLayer)
-            
-            let path1 = UIBezierPath()
-            path1.move(to: CGPoint(x: 0, y: areaHeight / 2))
-            path1.addCurve(to: CGPoint(x: waveLength, y: areaHeight / 2),
-                           controlPoint1: CGPoint(x: waveLength / 2, y: areaHeight / 2 + waveHeight),
-                           controlPoint2: CGPoint(x: waveLength / 2, y: areaHeight / 2 - waveHeight))
-            path1.addCurve(to: CGPoint(x: waveLength * 2, y: areaHeight / 2),
-                           controlPoint1: CGPoint(x: waveLength / 2 * 3, y: areaHeight / 2 + waveHeight),
-                           controlPoint2: CGPoint(x: waveLength / 2 * 3, y: areaHeight / 2 - waveHeight))
-            path1.addCurve(to: CGPoint(x: waveLength * 3, y: areaHeight / 2),
-                           controlPoint1: CGPoint(x: waveLength / 2 * 5, y: areaHeight / 2 + waveHeight),
-                           controlPoint2: CGPoint(x: waveLength / 2 * 5, y: areaHeight / 2 - waveHeight))
-            path1.addLine(to: CGPoint(x: waveLength * 3, y: areaHeight))
-            path1.addLine(to: CGPoint(x: 0, y: areaHeight))
-            path1.close()
-            waveLayer.path = path1.cgPath
-            
-            let animation = CABasicAnimation(keyPath: "bounds.origin.x")
-            animation.fromValue = 0
-            animation.toValue = waveLength
-            animation.duration = duration
-            animation.repeatCount = MAXFLOAT
-            waveLayer.add(animation, forKey: "bounds.origin.x")
         }
+    }
+    
+    func createWaveLayer(_ frame: CGRect, waveLength: CGFloat, waveHeight: CGFloat, waveColor: UIColor, animationDuration: Double) -> CAShapeLayer {
+        let areaWidth = frame.width
+        let areaHeight = frame.height
+        let waveLayer = CAShapeLayer()
+        waveLayer.frame = CGRect(x: 0, y: 0, width: areaWidth, height: areaHeight)
+        waveLayer.fillColor = waveColor.cgColor
+        
+        let path1 = UIBezierPath()
+        path1.move(to: CGPoint(x: 0, y: areaHeight / 2))
+        path1.addCurve(to: CGPoint(x: waveLength, y: areaHeight / 2),
+                       controlPoint1: CGPoint(x: waveLength / 2, y: areaHeight / 2 + waveHeight),
+                       controlPoint2: CGPoint(x: waveLength / 2, y: areaHeight / 2 - waveHeight))
+        path1.addCurve(to: CGPoint(x: waveLength * 2, y: areaHeight / 2),
+                       controlPoint1: CGPoint(x: waveLength / 2 * 3, y: areaHeight / 2 + waveHeight),
+                       controlPoint2: CGPoint(x: waveLength / 2 * 3, y: areaHeight / 2 - waveHeight))
+        path1.addCurve(to: CGPoint(x: waveLength * 3, y: areaHeight / 2),
+                       controlPoint1: CGPoint(x: waveLength / 2 * 5, y: areaHeight / 2 + waveHeight),
+                       controlPoint2: CGPoint(x: waveLength / 2 * 5, y: areaHeight / 2 - waveHeight))
+        path1.addLine(to: CGPoint(x: waveLength * 3, y: areaHeight))
+        path1.addLine(to: CGPoint(x: 0, y: areaHeight))
+        path1.close()
+        waveLayer.path = path1.cgPath
+        
+        let animation = CABasicAnimation(keyPath: "bounds.origin.x")
+        animation.fromValue = 0
+        animation.toValue = waveLength
+        animation.duration = animationDuration
+        animation.repeatCount = MAXFLOAT
+        waveLayer.add(animation, forKey: "bounds.origin.x")
+        return waveLayer
     }
 
 }
