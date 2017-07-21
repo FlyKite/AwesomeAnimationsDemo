@@ -54,6 +54,11 @@ class AnimationViewController: UIViewController {
                                        y: CGFloat(100),
                                        width: 300,
                                        height: 100))
+        case .like:
+            view = Like(frame: CGRect(x: screenWidth / 2 - 50,
+                                       y: CGFloat(100),
+                                       width: 100,
+                                       height: 300))
         }
         self.view.addSubview(view)
     }

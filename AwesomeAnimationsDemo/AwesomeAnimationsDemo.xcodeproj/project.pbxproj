@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A630EFE71F21E9C300148B93 /* Like.swift in Sources */ = {isa = PBXBuildFile; fileRef = A630EFE61F21E9C300148B93 /* Like.swift */; };
+		A630EFEB1F21F01500148B93 /* heart@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A630EFEA1F21F01500148B93 /* heart@2x.png */; };
+		A630EFEF1F21F22100148B93 /* wheart@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A630EFEE1F21F22100148B93 /* wheart@2x.png */; };
 		A6535F161F19AEA7004A0646 /* MenuAndClose.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6535F151F19AEA7004A0646 /* MenuAndClose.swift */; };
 		A6535F181F19B567004A0646 /* HamburgerMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6535F171F19B567004A0646 /* HamburgerMenu.swift */; };
 		A687FA7B1F1E382300548160 /* Waves.swift in Sources */ = {isa = PBXBuildFile; fileRef = A687FA7A1F1E382300548160 /* Waves.swift */; };
@@ -22,6 +25,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A630EFE61F21E9C300148B93 /* Like.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Like.swift; sourceTree = "<group>"; };
+		A630EFEA1F21F01500148B93 /* heart@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "heart@2x.png"; sourceTree = "<group>"; };
+		A630EFEE1F21F22100148B93 /* wheart@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wheart@2x.png"; sourceTree = "<group>"; };
 		A6535F151F19AEA7004A0646 /* MenuAndClose.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuAndClose.swift; sourceTree = "<group>"; };
 		A6535F171F19B567004A0646 /* HamburgerMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HamburgerMenu.swift; sourceTree = "<group>"; };
 		A687FA7A1F1E382300548160 /* Waves.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Waves.swift; sourceTree = "<group>"; };
@@ -89,6 +95,9 @@
 				A6535F151F19AEA7004A0646 /* MenuAndClose.swift */,
 				A6535F171F19B567004A0646 /* HamburgerMenu.swift */,
 				A687FA7A1F1E382300548160 /* Waves.swift */,
+				A630EFE61F21E9C300148B93 /* Like.swift */,
+				A630EFEA1F21F01500148B93 /* heart@2x.png */,
+				A630EFEE1F21F22100148B93 /* wheart@2x.png */,
 			);
 			path = AwesomeAnimations;
 			sourceTree = "<group>";
@@ -154,8 +163,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A68B57171F18DC63006EDB1B /* LaunchScreen.storyboard in Resources */,
+				A630EFEB1F21F01500148B93 /* heart@2x.png in Resources */,
 				A68B57141F18DC63006EDB1B /* Assets.xcassets in Resources */,
 				A68B57121F18DC63006EDB1B /* Main.storyboard in Resources */,
+				A630EFEF1F21F22100148B93 /* wheart@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,6 +181,7 @@
 				A68B57201F18DEBB006EDB1B /* AnimationViewController.swift in Sources */,
 				A68B570F1F18DC63006EDB1B /* ViewController.swift in Sources */,
 				A6535F161F19AEA7004A0646 /* MenuAndClose.swift in Sources */,
+				A630EFE71F21E9C300148B93 /* Like.swift in Sources */,
 				A68B57241F18E027006EDB1B /* BaseView.swift in Sources */,
 				A68B570D1F18DC63006EDB1B /* AppDelegate.swift in Sources */,
 				A68B572F1F18F82F006EDB1B /* PlayAndPause.swift in Sources */,
