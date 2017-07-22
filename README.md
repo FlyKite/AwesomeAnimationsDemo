@@ -17,3 +17,6 @@ A demo project of some awesome animations.
 
 ### Waves
 ![Waves](https://raw.githubusercontent.com/FlyKite/AwesomeAnimationsDemo/master/Previews/Waves.gif)
+
+### Like
+![Like](https://raw.githubusercontent.com/FlyKite/AwesomeAnimationsDemo/master/Previews/Like.gif)
