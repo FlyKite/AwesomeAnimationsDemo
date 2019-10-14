@@ -4,19 +4,19 @@ A demo project of some awesome animations.
 
 ## Preview
 ### Unlimited Triangle
-![UnlimitedTriangle](https://raw.githubusercontent.com/FlyKite/AwesomeAnimationsDemo/master/Previews/UnlimitedTriangle.gif)
+![UnlimitedTriangle](https://github.com/FlyKite/AwesomeAnimationsDemo/raw/master/Previews/UnlimitedTriangle.gif)
 
 ### Play and Pause
-![PlayAndPause](https://raw.githubusercontent.com/FlyKite/AwesomeAnimationsDemo/master/Previews/PlayAndPause.gif)
+![PlayAndPause](https://github.com/FlyKite/AwesomeAnimationsDemo/raw/master/Previews/PlayAndPause.gif)
 
 ### Menu and Close
-![MenuAndClose](https://raw.githubusercontent.com/FlyKite/AwesomeAnimationsDemo/master/Previews/MenuAndClose.gif)
+![MenuAndClose](https://github.com/FlyKite/AwesomeAnimationsDemo/raw/master/Previews/MenuAndClose.gif)
 
 ### Hamburger Menu
-![HamburgerMenu](https://raw.githubusercontent.com/FlyKite/AwesomeAnimationsDemo/master/Previews/HamburgerMenu.gif)
+![HamburgerMenu](https://github.com/FlyKite/AwesomeAnimationsDemo/raw/master/Previews/HamburgerMenu.gif)
 
 ### Waves
-![Waves](https://raw.githubusercontent.com/FlyKite/AwesomeAnimationsDemo/master/Previews/Waves.gif)
+![Waves](https://github.com/FlyKite/AwesomeAnimationsDemo/raw/master/Previews/Waves.gif)
 
 ### Like
-![Like](https://raw.githubusercontent.com/FlyKite/AwesomeAnimationsDemo/master/Previews/Like.gif)
+![Like](https://github.com/FlyKite/AwesomeAnimationsDemo/raw/master/Previews/Like.gif)
